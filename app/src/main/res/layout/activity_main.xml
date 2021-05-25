@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/butteranimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20sp"
+        android:background="@drawable/butter01" />
+
+    <ImageView
+        android:id="@+id/foodbowl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomstuff"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/food1" />
+
+    <ImageView
+        android:id="@+id/waterbowl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomstuff"
+        android:layout_toEndOf="@id/foodbowl"
+        android:layout_toRightOf="@id/foodbowl"
+        android:background="@drawable/water1" />
+
+    <ImageView
+        android:id="@+id/heartimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heart0"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/feather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/feather"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/creatureimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#B46A007C"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/agetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:text="@string/age"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ageinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hungertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:text="@string/hunger"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hungerinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/watertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:text="@string/water"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/waterinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/happytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:text="@string/happy"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/happyinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/healthtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:text="@string/health"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/healthinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deathtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:text="@string/death"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deathinttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="2sp"
+                android:paddingRight="2sp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0005FFC1"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="90sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/gameonebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/game_1"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/gametwobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/game_2"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nameyournewpettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/name_your_new_pet"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/nameedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/createnewpetbutton"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#440050"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:text="@string/create_a_new_pet"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="#440050" />
+
+        <Button
+            android:id="@+id/openoldpetbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#440050"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:text="@string/open_a_pet_already_created"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="#440050" />
+
+        <TextView
+            android:id="@+id/deadpettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/your_pet_died"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearlayoutlistofpets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/listofpets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/deletebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/deletebtn"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/guessanumbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="40sp"
+            android:paddingTop="12sp"
+            android:paddingRight="40sp"
+            android:text="@string/guess_a_number"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/alreadyguessedletters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/hiddenword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="30sp"
+            android:paddingTop="13sp"
+            android:paddingRight="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/guessaletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/guess_a_letter"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/numberedittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:visibility="gone">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/letteredittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="1"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:visibility="gone">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomstuff"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/featherimagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/featherbtn" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/savebtnpng"
+            android:onClick="setSavebtn" />
+
+        <ImageButton
+            android:id="@+id/soundimagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/soundbtn" />
+
+        <ImageButton
+            android:id="@+id/savedcreaturesimagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/menu" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bonetreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomstuff"
+        android:layout_alignRight="@id/bottomstuff"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/bone0" />
+
+    <TextView
+        android:id="@+id/loadedpetname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomstuff"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loadedpetname"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/bottomstuff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="#7E76008A"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mealbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:background="@drawable/mealbtn" />
+
+        <ImageButton
+            android:id="@+id/treatbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:background="@drawable/threatbtn" />
+
+        <ImageButton
+            android:id="@+id/waterbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:background="@drawable/waterbtn" />
+
+        <ImageButton
+            android:id="@+id/playbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:background="@drawable/playbtn" />
+
+        <ImageButton
+            android:id="@+id/punishbutton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:background="@drawable/punishbtn" />
+
+        <ImageButton
+            android:id="@+id/shotbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:background="@drawable/shotbtn" />
+    </LinearLayout>
+</RelativeLayout>

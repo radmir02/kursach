@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тамагочи</string>
+    <string name="loadedpetname">Тамагочи</string>
+    <string name="create_a_new_pet">Создать нового питомца</string>
+    <string name="open_a_pet_already_created">Открыть заранее созданного</string>
+    <string name="name_your_new_pet">Имя нового питомца!</string>
+    <string name="age">Возраст</string>
+    <string name="hunger">Голод</string>
+    <string name="water">Вода</string>
+    <string name="happy">Счастье</string>
+    <string name="health">Здоровье</string>
+    <string name="death">Смерть</string>
+    <string name="pet_name">Имя</string>
+    <string name="submit">Выбрать</string>
+    <string name="game_1">Игра 1</string>
+    <string name="game_2">Игра 2</string>
+    <string name="guess_a_number">Отгадай число (0–4)</string>
+    <string name="you_get_2_tries">У вас есть 2 попытки</string>
+    <string name="guess_a_letter">Отгадай слово</string>
+    <string name="nope">Неть!</string>
+    <string name="correct">Верно)!</string>
+    <string name="your_pet_died">питомец всё... :(</string>
+    <string name="scenario_01"> Упал по дороге! Причинил себе увечия, счастье (–10) и здоровье (–15).</string>
+    <string name="scenario_02">  Дошел без проишествий, счастье (+15)</string>
+    <string name="scenario_03"> Вчера съел что-то просроченное, счастье (–10)</string>
+    <string name="scenario_04"> Подрался с другим питомцем! счастье (-10) и здоровье (-15)</string>
+
+</resources>
